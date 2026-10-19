@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#522c47">
+  <meta name="description" content="從防癌準備到個人保費試算，五個步驟了解臺銀人壽新真關懷防癌健康保險。">
+  <title>彩繪人生｜防癌互動解說展示架・五站情境圖版</title>
+  <link rel="stylesheet" href="calculator.css"><link rel="stylesheet" href="story.css"><link rel="stylesheet" href="scenes.css">
+  <script src="rates.js" defer></script><script src="engine.js" defer></script><script src="app.js" defer></script><script src="story.js" defer></script>
+</head>
+<body>
+  <header class="story-header"><a class="brand" href="#step-1" aria-label="彩繪人生，回到第一站"><span class="brand-mark" aria-hidden="true">彩</span><span>彩繪人生<small>讓保障，從理解開始</small></span></a><div class="header-actions"><span class="edition">五站情境解說 <b>03</b></span><button class="primary-button compact" data-go="4">直接試算 <span aria-hidden="true">↗</span></button></div></header>
+  <nav class="station-nav" aria-label="五站解說導覽"><div role="tablist" aria-label="選擇解說站點">
+    <button id="tab-1" role="tab" aria-selected="true" aria-controls="step-1" data-go="1"><span>01</span>為什麼準備</button>
+    <button id="tab-2" role="tab" aria-selected="false" aria-controls="step-2" tabindex="-1" data-go="2"><span>02</span>保障怎麼分</button>
+    <button id="tab-3" role="tab" aria-selected="false" aria-controls="step-3" tabindex="-1" data-go="3"><span>03</span>認識這張保單</button>
+    <button id="tab-4" role="tab" aria-selected="false" aria-controls="step-4" tabindex="-1" data-go="4"><span>04</span>我的保費給付</button>
+    <button id="tab-5" role="tab" aria-selected="false" aria-controls="step-5" tabindex="-1" data-go="5"><span>05</span>一起看方案</button>
+  </div><div class="progress-track" aria-hidden="true"><span id="station-progress"></span></div></nav>
+  <main class="story-main">
+    <section class="station" id="step-1" role="tabpanel" aria-labelledby="tab-1">
+      <div class="scene-hero opening-hero">
+        <img id="opening-scene" src="assets/preparation.png" alt="女性在暖光窗邊整理筆記，思考未來的生活安排" width="1672" height="941" fetchpriority="high">
+        <div class="scene-copy"><p class="chapter">01 / 從生活開始想</p><h1 tabindex="-1">現在多一份準備，<br>未來多一份<em>選擇。</em></h1><p class="lead">為自己，也為在意的人，<br>預留治療與生活的安排空間。</p><span class="scene-label">從您關心的地方，一起聊起</span></div><span class="scene-disclaimer">AI 情境示意</span>
+      </div>
+      <div class="opening-layout">
+        <div class="concerns"><p class="overline">這三件事，您最想先聊哪一項？</p><div role="group" aria-label="選擇關心的支出">
+          <button class="concern active" data-concern="treatment" aria-pressed="true"><span class="concern-symbol" aria-hidden="true">＋</span><span><strong>治療的選擇</strong><small>檢查、治療與可能的自費支出</small></span><span class="concern-arrow" aria-hidden="true">↗</span></button>
+          <button class="concern" data-concern="living" aria-pressed="false"><span class="concern-symbol" aria-hidden="true">⌂</span><span><strong>休養的生活</strong><small>工作暫緩時，日常開銷仍繼續</small></span><span class="concern-arrow" aria-hidden="true">↗</span></button>
+          <button class="concern" data-concern="family" aria-pressed="false"><span class="concern-symbol" aria-hidden="true">♡</span><span><strong>家人的日常</strong><small>房貸、子女與家庭固定支出</small></span><span class="concern-arrow" aria-hidden="true">↗</span></button>
+        </div></div>
+        <aside class="thought-panel" aria-live="polite"><div class="thought-copy"><p class="overline">從您在意的地方開始</p><h2 id="concern-title">希望做決定時，多一份餘裕。</h2><p id="concern-copy">如果治療計畫中有自費項目，事先準備的一筆資金，可以讓您與家人一起討論如何安排。</p></div></aside>
+      </div><p class="quiet-note">這裡只是解說重點的選擇，不會據此判定您的健康風險或建議保額。</p>
+    </section>
+    <section class="station" id="step-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+      <div class="scene-hero scene-hero-compact family-hero">
+        <img src="assets/family.png" alt="夫妻在家中一起閱讀筆記，討論家庭生活安排" width="1672" height="941" loading="lazy">
+        <div class="scene-copy"><p class="chapter">02 / 看懂保障的用途</p><h1 tabindex="-1">已有保障，<br>也值得<em>一起看看。</em></h1><p class="lead">治療與生活，各有哪些支援？<br>先了解功能，再回看自己的需要。</p></div><span class="scene-disclaimer">AI 情境示意</span>
+      </div>
+      <div class="support-layout"><div class="support-options" role="group" aria-label="選擇保障用途">
+        <button data-support="daily" class="support active" aria-pressed="true"><span>01</span><strong>住院補貼</strong><small>依約定的住院條件與天數給付</small><b aria-hidden="true">→</b></button>
+        <button data-support="expense" class="support" aria-pressed="false"><span>02</span><strong>醫療費用補償</strong><small>依費用項目、限額與條件給付</small><b aria-hidden="true">→</b></button>
+        <button data-support="lump" class="support" aria-pressed="false"><span>03</span><strong>癌症一次金</strong><small>符合癌症定義時，按約定給付</small><b aria-hidden="true">→</b></button>
+      </div><article class="support-explainer" aria-live="polite"><p class="overline">不同用途，各有角色</p><h2 id="support-title">住院期間的一份補貼</h2><p id="support-copy">符合保單約定的住院條件時，依約定天數與日額等方式給付。適合用來理解住院期間的定額支援。</p><div class="support-question"><span>可以一起確認</span><p id="support-question">如果治療不需要住院，原有保單有哪些給付可以支援？</p></div><p class="quiet-note">這是保障功能的概念說明。不同保單可能兼具多種功能，請回看各自條款。</p></article></div>
+      <div class="expense-path"><span>可能需要安排的支出</span><div><b>檢查</b><i>→</i><b>治療</b><i>→</i><b>追蹤</b><i>→</i><b>休養</b></div><small>僅為生活情境示意，非每個人必經流程，也不是 HX 的逐項給付清單。</small></div>
+    </section>
+    <section class="station" id="step-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+      <div class="station-intro"><p class="chapter">03 / 認識商品，理解條件</p><h1 tabindex="-1">一筆防癌準備，<br>多一份<em>安排生活的彈性。</em></h1><p class="lead">臺銀人壽新真關懷防癌健康保險 <span class="inline-tag">HX</span></p></div>
+      <div class="product-layout"><aside class="product-portrait"><span class="product-code">HX</span><p>新真關懷<br><strong>防癌健康保險</strong></p><div class="product-tags"><span>10 年 / 20 年繳</span><span>保額 30～200 萬元</span></div><small>保障至保險年齡 86 歲之保單週年日，並須符合契約持續有效等約定。</small><button class="light-button" data-go="4">用我的生日看看保費 ↗</button></aside>
+      <div class="product-features">
+        <details open><summary><span>01</span><div><h2>癌症分級給付</h2><p>初期、輕度與重度，依約定提供一筆資金。</p></div><b aria-hidden="true">＋</b></summary><div class="feature-detail">初期與輕度給付各以一次為限，給付後契約繼續有效；重度給付後契約終止。第一保單年度與第二年度起的計算方式不同，且有 90 日癌症等待期間。<button class="inline-link" data-go="4">查看我的文字給付 →</button></div></details>
+        <details><summary><span>02</span><div><h2>符合條件的滿期給付</h2><p>為保障期間之後，保留另一份安排。</p></div><b aria-hidden="true">＋</b></summary><div class="feature-detail">契約有效且於保險年齡達 86 歲之保單週年日仍生存時，比較當時的保單價值準備金與年繳保險費總和 × 1.06，取較大者。已因重度癌症等給付終止契約者，不再領取滿期金；提前解約可能有損失。</div></details>
+        <details><summary><span>03</span><div><h2>身故保障，照顧家人</h2><p>依契約約定，給付身故或喪葬費用保險金。</p></div><b aria-hidden="true">＋</b></summary><div class="feature-detail">一般依身故時保單價值準備金與年繳保險費總和 × 1.06 取較大者。保險年齡達 16 歲之保單週年日前另有退還或給付所繳保費加計利息的約定。給付或退還後契約終止。</div></details>
+        <details><summary><span>04</span><div><h2>第一至六級失能豁免</h2><p>繳費期間符合約定失能，豁免續期應繳保費。</p></div><b aria-hidden="true">＋</b></summary><div class="feature-detail">限本契約有效且於繳費期間內，經診斷符合條款第一至六級失能之一；僅適用本契約，不包括附約。這項豁免不代表罹患任何重大疾病都能免繳保費。</div></details>
+      </div></div><p class="quiet-note">商品依本專案提供之 HX 文件解說；完整定義與給付條件，可至第 4 站展開商品文件查看。</p>
+    </section>
+    <section class="station calculator-station" id="step-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+      <div class="station-intro calculator-intro"><div><p class="chapter">04 / 把保障放進自己的預算</p><h1 tabindex="-1">從生日開始，<em>看看我的方案。</em></h1><p class="lead">調整保額，保費與文字給付一起更新。</p></div><span class="inline-tag">文字給付版</span></div>
+    <div class="workspace">
+      <aside class="controls" aria-labelledby="settings-title">
+        <div class="section-heading"><span class="step">01</span><h2 id="settings-title">您的保障設定</h2><button id="reset" class="text-button" type="button">重設</button></div>
+        <label class="field-label" for="birth">出生日期 <span>西元年 / 月 / 日</span></label>
+        <input type="date" id="birth" required aria-describedby="age-note feedback">
+        <div class="age-band" id="age-note"><span>保險年齡</span><strong id="age-value">— <small>歲</small></strong><span id="actual-age">請先輸入生日</span></div>
+        <fieldset><legend>費率性別</legend><div class="segmented"><label><input type="radio" name="sex" value="male" checked><span>男性</span></label><label><input type="radio" name="sex" value="female"><span>女性</span></label></div></fieldset>
+        <fieldset><legend>繳費年期</legend><div class="segmented"><label><input type="radio" name="term" value="10"><span>10 年繳</span></label><label><input type="radio" name="term" value="20" checked><span>20 年繳</span></label></div></fieldset>
+        <div class="amount-label"><label class="field-label" for="amount">保險金額</label><span>30～200 萬元</span></div>
+        <div class="amount-stepper"><button type="button" id="minus" aria-label="保額減少 10 萬元">−</button><div><input id="amount" type="number" min="30" max="200" step="1" value="100" inputmode="numeric" aria-label="保險金額，單位萬元"><span>萬元</span></div><button type="button" id="plus" aria-label="保額增加 10 萬元">＋</button></div>
+        <input type="range" id="amount-range" min="30" max="200" step="1" value="100" aria-label="調整保額，單位萬元">
+        <div class="presets" aria-label="快速選擇保額"><button type="button" data-amount="50">50 萬</button><button type="button" data-amount="100" class="active">100 萬</button><button type="button" data-amount="150">150 萬</button><button type="button" data-amount="200">200 萬</button></div>
+        <label for="mode" class="field-label">繳費方式</label><select id="mode"><option value="year">年繳</option><option value="half">半年繳</option><option value="quarter">季繳</option><option value="month">月繳</option></select>
+        <details class="date-settings"><summary>試算日期與年齡說明</summary><label for="asof">試算基準日</label><input id="asof" type="date"><p>以足歲計算，超過 6 個月才加算 1 歲；剛好 6 個月不加算。實際投保以保險公司認定為準。</p></details>
+        <p id="feedback" role="status" class="feedback">請輸入生日，即可開始試算。</p>
+        <p class="privacy">生日僅供本頁計算，不會上傳或儲存。</p>
+      </aside>
+      <div class="results">
+        <section class="premium-panel" aria-labelledby="premium-heading">
+          <div class="premium-top"><p class="eyebrow" id="premium-heading">您的保費試算</p><span class="pill" id="summary">等待輸入生日</span></div>
+          <div class="premium-number"><span>NT$</span><strong id="premium">—</strong><span id="pay-unit">／年</span></div>
+          <p class="premium-caption" id="premium-caption">選擇保額，讓保障與預算一起調整。</p>
+          <div class="premium-bottom"><div><span>每年應繳合計</span><strong id="year-cost">—</strong></div><div><span>依目前繳別繳滿之保費合計</span><strong id="total-cost">—</strong></div></div>
+          <p class="premium-footnote">以表定費率試算，尚未套用繳費折扣；非正式承保報價。</p>
+        </section>
+        <section class="maturity-spotlight" aria-labelledby="maturity-heading" aria-live="polite" aria-atomic="true">
+          <div class="maturity-heading"><span class="maturity-age">86<span>歲</span></span><div><p class="overline">滿期時，可以準備多少？</p><h2 id="maturity-heading">滿期給付參考金額</h2></div></div>
+          <strong id="maturity-value" class="maturity-value">—</strong>
+          <div class="maturity-paid-line"><span id="maturity-period">繳滿年期的表定保費總和</span><strong id="maturity-paid">—</strong></div>
+          <p id="maturity-formula" class="maturity-formula">輸入生日，看看繳滿後的表定保費總和與滿期給付試算基礎。</p>
+          <p id="maturity-mode-note" class="maturity-mode-note">10 年或 20 年繳滿後，保障繼續；滿期給付須等到保險年齡 86 歲之保單週年日。</p>
+          <p class="maturity-condition">此為「年繳保險費總和 × 1.06」的試算基礎；實際滿期金須再與當時保單價值準備金比較取大。須於保險年齡達 86 歲之保單週年日仍生存且契約有效。重度癌症給付後契約終止，之後無滿期金；1.06 倍不是年利率。</p>
+        </section>
+        <section class="benefits-section" aria-labelledby="benefits-title">
+          <div class="benefit-heading"><div class="section-heading"><span class="step">02</span><h2 id="benefits-title">這份保障，可以給付什麼？</h2></div><span class="text-version">文字給付版</span></div>
+          <div class="year-setting"><div><label for="policy-year">查看保單年度</label><p>第一年度與第二年度起，給付方式不同。</p></div><select id="policy-year"><option value="1">第 1 保單年度</option><option value="2" selected>第 2 保單年度</option></select></div>
+          <p class="waiting-note"><span aria-hidden="true">ⓘ</span> 癌症等待期間為生效日起持續有效 90 日；下列癌症給付均須符合條款的初次罹患與診斷定義。</p>
+          <div class="benefit-list" aria-live="polite" aria-atomic="true">
+            <article class="benefit-row"><span class="benefit-index">01</span><div><h3>初次罹患癌症（初期）保險金</h3><p id="initial-rule">第 2 保單年度起，按保險金額的 5% 給付。</p><small>以一次為限，給付後契約繼續有效。</small></div><strong id="initial">—</strong></article>
+            <article class="benefit-row"><span class="benefit-index">02</span><div><h3>初次罹患癌症（輕度）保險金</h3><p id="light-rule">第 2 保單年度起，按保險金額的 15% 給付。</p><small>以一次為限，給付後契約繼續有效。</small></div><strong id="light">—</strong></article>
+            <article class="benefit-row highlight"><span class="benefit-index">03</span><div><h3>初次罹患癌症（重度）保險金</h3><p id="severe-rule">第 2 保單年度起，比較「保險金額」與「年繳保險費總和 × 1.06」，取較大者。</p><small>給付後，本契約效力即行終止。</small></div><strong id="severe">—</strong></article>
+            <article class="benefit-row"><span class="benefit-index">04</span><div><h3>身故保險金或喪葬費用保險金</h3><p id="death-rule">比較「保單價值準備金」與「年繳保險費總和 × 1.06」，取較大者。保險年齡達 16 歲之保單週年日前另有約定。</p><small id="death-note">給付或退還後契約終止；未匯入保單價值準備金，不顯示確定金額。</small></div><span class="formula-tag">依條款計算</span></article>
+            <article class="benefit-row"><span class="benefit-index">05</span><div><h3>滿期保險金</h3><p>契約有效且於保險年齡達 86 歲之保單週年日仍生存，比較當時「保單價值準備金」與「年繳保險費總和 × 1.06」，取較大者。</p><small id="maturity-note">給付後契約終止。此給付與重度癌症、身故給付不能視為必然可累加。</small></div><span class="formula-tag">86 歲週年日</span></article>
+            <article class="benefit-row"><span class="benefit-index">06</span><div><h3>第一級至第六級失能豁免保險費</h3><p>契約有效且於繳費期間內，經診斷符合條款失能程度之一，自診斷確定日起豁免本契約續期應繳保費。</p><small>僅適用本契約，不含附約；不退還當期已繳保費的未滿期保費。</small></div><span class="formula-tag">保障繼續有效</span></article>
+          </div>
+        </section>
+        <details class="definitions"><summary>初期、輕度、重度，條款怎麼定義？</summary><div><h3>癌症（初期）</h3><p>原位癌或零期癌、第一期惡性類癌、第二期（含）以下且非惡性黑色素瘤之皮膚癌（包括皮膚附屬器癌及皮纖維肉瘤）。</p><h3>癌症（輕度）</h3><p>慢性淋巴性白血病第一期及第二期（按 Rai 氏分期）、10 公分（含）以下之第一期何杰金氏病、第一期前列腺癌、第一期膀胱乳頭狀癌、甲狀腺微乳頭狀癌（甲狀腺內 1 公分〔含〕以下之乳頭狀癌）、邊緣性卵巢癌、第一期黑色素瘤、第一期乳癌、第一期子宮頸癌、第一期大腸直腸癌。</p><h3>癌症（重度）</h3><p>癌症（初期）與癌症（輕度）以外之癌症。以上為條款摘錄，診斷與認定仍須符合完整契約約定。</p></div></details>
+        <details class="definitions"><summary>試算依據與商品文件</summary><div><p>依本專案提供之 HX 費率表、113 年 1 月版 DM 與條款製作。正式投保前須核對適用版本及承保條件。</p><p>「年繳保險費總和」按表定年繳保費及保單經過年度計算，未滿一週年以一週年計；繳費期滿後以繳費年期計。與實際按月繳入的累計保費不同。1.06 倍不代表年利率或投資報酬率。</p><p>本頁為初次投保、保額未變更之標準試算，未模擬減額繳清、借款、欠費、契約變更及特殊身故情形；實際給付依契約約定。</p><nav class="source-links"><a href="sources/臺銀人壽新真關懷防癌健康保險DM.pdf" target="_blank" rel="noopener">商品 DM ↗</a><a href="sources/臺銀人壽新真關懷防癌健康保險條款.pdf" target="_blank" rel="noopener">完整條款 ↗</a><a href="sources/臺銀人壽新真關懷防癌健康保險費率表.pdf" target="_blank" rel="noopener">費率表 ↗</a></nav></div></details>
+      </div>
+    </div>
+
+    </section>
+    <section class="station" id="step-5" role="tabpanel" aria-labelledby="tab-5" hidden>
+      <div class="scene-hero future-hero">
+        <img src="assets/future.png" alt="熟齡伴侶在晨光湖畔散步，享受相伴的生活" width="1672" height="941" loading="lazy">
+        <div class="scene-copy"><p class="chapter">05 / 讓選擇回到自己</p><h1 tabindex="-1">為未來的生活，<br>留一份<em>從容。</em></h1><p class="lead">把今天的預算，<br>和自己在意的未來，一起想清楚。</p></div><span class="scene-disclaimer">AI 情境示意，非滿期或健康結果保證</span>
+      </div>
+      <div class="review-layout"><article class="review-summary"><p class="overline">這次一起看的方案</p><p class="review-concern">您關注：<strong id="review-concern">治療的選擇</strong></p><div class="review-price"><span id="review-mode">試算保費</span><strong id="review-premium">尚未試算</strong></div><p id="review-description">輸入生日與方案後，這裡會帶入您的試算摘要。</p><dl><div><dt>保險金額</dt><dd id="review-amount">—</dd></div><div><dt>初期 / 輕度給付</dt><dd id="review-initial">—</dd></div><div><dt>重度給付</dt><dd id="review-severe">—</dd></div></dl><div class="review-maturity"><span>86 歲滿期給付參考金額</span><strong id="review-maturity-value">—</strong><p id="review-maturity-formula">完成試算後，這裡會顯示計算過程。</p><small>按表定年繳保費總和 × 1.06 試算；實際與保單價值準備金取大。須於保險年齡達 86 歲之保單週年日仍生存且契約有效，繳費期滿不立即給付。重度給付後契約終止，之後無滿期金。1.06 倍不是年利率。</small></div><p class="quiet-note" id="review-year">癌症給付須符合等待期間、初次罹患與完整條款約定。</p><button class="primary-button" data-go="4" id="review-edit">先試算我的方案 ↗</button></article>
+      <div class="decision-copy"><h2>如果您在意這三件事，<br>可以進一步了解這張保單。</h2><ol><li><span>01</span><div><strong>想補強符合條款罹癌時的一筆資金</strong><p>與既有保障一起考量，討論治療與生活的安排。</p></div></li><li><span>02</span><div><strong>願意以長期預算規劃保障</strong><p>比較不同保額，選擇可以持續負擔的保費。</p></div></li><li><span>03</span><div><strong>也重視身故與符合條件的滿期給付</strong><p>理解給付條件、契約終止及提前解約的影響。</p></div></li></ol><div class="decision-note">若您主要想找特定療程逐次給付，或更低的初期保費，也可以再比較其他規劃。這裡的關注選擇與試算，並非自動投保建議。</div><button class="outline-button" data-go="3">回看商品特色與條件</button></div></div>
+    </section>
+    <nav class="station-footer" aria-label="前後站切換"><button class="outline-button" id="previous">← 上一站</button><span id="station-counter" aria-live="polite">01 / 05</span><button class="primary-button" id="next">下一站：保障怎麼分 →</button></nav>
+    <footer class="site-footer"><span>彩繪人生 · 五站情境圖展示架</span><p>輔助解說與試算工具，非保險公司官方網站或正式建議書。詳細保障及給付依保單條款；本頁採專案提供的費率與文件，尚未套用繳費折扣。</p></footer>
+  </main>
+</body>
+</html>
